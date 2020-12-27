@@ -338,7 +338,7 @@ public class MyVector<T> {
     int uniquify() {
         int i = 0, j = 0;
         while (++j < this.size) {
-            if (elements[i] != elements[j]) {
+            if (!elements[i].equals(elements[j])) {
                 elements[++i] = elements[j];
             }
         }
